@@ -31,7 +31,7 @@ a {
 
 header {
   font-family: "Bebas Neue", cursive;
-  height: 600px;
+  height: 750px;
   background-image: url("./assets/images/header/pattern.jpg");
   color: #42200b;
 }
@@ -74,6 +74,83 @@ header nav li a {
   color: #42200b;
   font-size: 22px;
   letter-spacing: 4px;
+}
+
+header .hero {
+  margin: 50px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+header .caption p:first-child {
+  border: 2px dashed #42200b;
+  padding: 10px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #42200b;
+  display: inline-block;
+}
+header .caption p:last-child {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 50px;
+  color: #42200b;
+  text-shadow: 3px 3px #fff;
+}
+header .caption p:last-child span {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 110px;
+  color: #42200b;
+  text-shadow: 3px 3px #fff;
+}
+
+header .hero .imgs {
+  position: relative;
+  width: 600px;
+  height: 510px;
+}
+header .hero .imgs img {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+header .hero .imgs .burger {
+  width: 480px;
+}
+header .hero .imgs .drink {
+  width: 350px;
+  right: -80px;
+  bottom: 5px;
+}
+header .hero .imgs .potato {
+  width: 300px;
+  right: 255px;
+  bottom: 120px;
+}
+
+header .discount {
+  position: absolute;
+  background: #df1b1c;
+  color: white;
+  border: 3px dashed white;
+  width: 150px;
+  height: 150px;
+  right: 400px;
+  bottom: 25px;
+  border-radius: 75px;
+  box-shadow: 0px 0px 0px 10px #df1b1c;
+  font-size: 60px;
+  font-family: "Bebas Neue", cursive;
+}
+header .discount span {
+  font-size: 30px;
+}
+header .discount span:last-child {
+  display: flex;
+  justify-content: center;
+  line-height: 25px;
+  font-size: 40px;
+  letter-spacing: 5px;
 }
 
 /*⛔⛔ End Header ⛔⛔*/
