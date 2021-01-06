@@ -24,3 +24,56 @@ a {
 }
 
 /*⛔⛔ End genral reset ⛔⛔*/
+
+/* 
+    🌳🌳 Start Header  🌳🌳 
+*/
+
+header {
+  font-family: "Bebas Neue", cursive;
+  height: 600px;
+  background-image: url("./assets/images/header/pattern.jpg");
+  color: #42200b;
+}
+
+header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 50px 10px 50px;
+}
+
+header .contact {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+header .contact::before {
+  content: url(./assets/images/header/moto.png);
+  position: absolute;
+  left: -50px;
+  top: -10px;
+}
+header nav {
+  padding-right: 50px;
+}
+header nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+header nav ul li {
+  margin: 0 20px;
+}
+header nav ul li:last-child {
+  margin-right: 0;
+  color: red;
+}
+header nav li a {
+  color: #42200b;
+  font-size: 22px;
+  letter-spacing: 4px;
+}
+
+/*⛔⛔ End Header ⛔⛔*/
