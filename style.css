@@ -154,3 +154,46 @@ header .discount span:last-child {
 }
 
 /*⛔⛔ End Header ⛔⛔*/
+
+/* 
+🌳🌳 Start Section Try Today  🌳🌳 
+*/
+
+.try-today {
+  width: 90%;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.try-today .card-container {
+  width: 48%;
+  position: relative;
+  text-transform: uppercase;
+  font-family: "Bebas Neue", cursive;
+  color: white;
+}
+.try-today .card-container > div {
+  position: relative;
+}
+.try-today .card-container:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.try-today .card-container img {
+  width: 100%;
+}
+.try-today .card-container .label {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.try-today .card-container .caption {
+  position: absolute;
+  top: 45px;
+  left: 20px;
+  margin-top: 5px;
+  font-size: 40px;
+  line-height: 35px;
+}
+/*⛔⛔ End Section Try Today  ⛔⛔*/
