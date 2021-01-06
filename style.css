@@ -1,0 +1,26 @@
+/* 
+font-family: 'Bebas Neue', cursive;    👉 nav , some buttons
+font-family: 'Montserrat', sans-serif; 👉 p [with 2 weights 400,700 (regular,bold)]
+font-family: 'Alfa Slab One', cursive; 👉 H1,H2..
+*/
+
+/* 
+    🌳🌳 Start genral reset  🌳🌳
+*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*⛔⛔ End genral reset ⛔⛔*/
