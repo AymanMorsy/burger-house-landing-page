@@ -108,6 +108,7 @@ header .hero .imgs {
   position: relative;
   width: 600px;
   height: 510px;
+  overflow: hidden;
 }
 header .hero .imgs img {
   position: absolute;
