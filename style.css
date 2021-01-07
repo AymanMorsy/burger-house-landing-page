@@ -271,3 +271,82 @@ header .discount span:last-child {
 }
 
 /*⛔⛔ End Menu ⛔⛔*/
+
+/* 
+🌳🌳 Start Slider  🌳🌳 
+*/
+.slider {
+  margin: 30px 0;
+  height: 650px;
+}
+
+.slider .swiper-container {
+  width: 94%;
+  margin: 0 auto !important;
+  box-shadow: 19px 11px 30px 6px rgba(50, 50, 50, 0.4);
+}
+.slider {
+  margin: 100px 0;
+}
+.slider .swiper-slide {
+  height: 455px;
+}
+.slider .content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  height: 500px;
+}
+.slider .content .caption {
+  width: 50%;
+  padding: 10px;
+}
+.slider .caption h2 {
+  color: #3d2514;
+  font-family: "Alfa Slab One", cursive;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.slider .caption p {
+  font-family: "Montserrat", sans-serif;
+  line-height: 40px;
+}
+.slider .caption h2 span {
+  display: block;
+  color: #252424;
+  font-family: "Bebas Neue", cursive;
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.slider .content .img {
+  width: 50%;
+}
+.slider .content .img img {
+  width: 100%;
+}
+
+/* pagination */
+
+.swiper-container-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 50px;
+  left: -500px;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: orange;
+}
+
+.swiper-pagination-bullet {
+  width: 17px;
+  height: 17px;
+}
+/*⛔⛔ End Slider ⛔⛔*/
+
+footer {
+  height: 200vh;
+}
