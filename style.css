@@ -198,3 +198,76 @@ header .discount span:last-child {
   line-height: 35px;
 }
 /*⛔⛔ End Section Try Today  ⛔⛔*/
+
+/* 
+🌳🌳 Start Section Menu  🌳🌳 
+*/
+
+.menu .wrapper {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.menu .wrapper button {
+  background: #ffc236;
+  color: #3d2514;
+  border: none;
+  font-family: "Bebas Neue", cursive;
+  font-size: 24px;
+  text-transform: uppercase;
+  padding: 7px 20px;
+  margin-bottom: 30px;
+}
+.menu .wrapper h2 {
+  color: #3d2514;
+  font-family: "Alfa Slab One", cursive;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+.menu .wrapper p {
+  color: #3d2514;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+.menu .products {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.menu .card img {
+  width: 100%;
+}
+.menu .card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: calc(80% / 3);
+}
+.menu .card .prod-name {
+  font-family: "Bebas Neue", cursive;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #3d2514;
+}
+.menu .card .caption {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #3d2514;
+  margin: 20px 0;
+}
+.menu .card button {
+  background: #df1b1c;
+  border: none;
+  font-family: "Alfa Slab One", cursive;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: white;
+  width: 200px;
+  padding: 15px;
+}
+
+/*⛔⛔ End Menu ⛔⛔*/
