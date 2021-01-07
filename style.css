@@ -423,7 +423,72 @@ form::after {
 
 /*⛔⛔ End Booking ⛔⛔*/
 
+/* 
+🌳🌳 Start Footer  🌳🌳 
+*/
+
 footer {
-  height: 200vh;
-  border: 1px solid gray;
+  color: white;
 }
+
+footer .wrapper {
+  background: url(./assets/images/footer/Layer.jpg);
+  width: 94%;
+  margin: 0 auto;
+  height: 500px;
+  padding: 60px 30px 30px 30px;
+}
+footer .wrapper img {
+  height: 75px;
+  margin-bottom: 30px;
+}
+footer .sub-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 150px;
+}
+footer .sub-wrapper > * {
+  width: 450px;
+}
+footer .sub-wrapper p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+footer .contact p {
+  font-family: "Bebas Neue", cursive;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+footer .contact .location::before {
+  content: url(./assets/images/footer/location.png);
+  display: inline-block;
+  margin-right: 20px;
+}
+footer .contact .email::before {
+  content: url(./assets/images/footer/email.png);
+  display: inline-block;
+  margin-right: 20px;
+}
+
+footer .bottom-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .bottom-footer p {
+  font-family: "Bebas Neue", cursive;
+  text-transform: uppercase;
+  margin-top: -20px;
+}
+footer .bottom-footer .social {
+  padding-top: 10px;
+}
+footer .bottom-footer img {
+  height: 29px;
+  display: inline-block;
+}
+
+/*⛔⛔ End Footer ⛔⛔*/
