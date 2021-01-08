@@ -472,7 +472,7 @@ footer .contact .location::before {
   margin-right: 20px;
 }
 footer .contact .email::before {
-  content: url(./assets/images/footer/email.png);
+  content: url(./assets/images/footer/Email.png);
   display: inline-block;
   margin-right: 20px;
 }
