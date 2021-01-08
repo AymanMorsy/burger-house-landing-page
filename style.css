@@ -60,6 +60,76 @@ header .contact::before {
   left: -50px;
   top: -10px;
 }
+header .haburger-menu {
+  display: none;
+}
+header .haburger-menu {
+  width: 60px;
+  height: 45px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+header .haburger-menu span {
+  display: block;
+  position: absolute;
+  height: 9px;
+  width: 100%;
+  background: #d3531a;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+header .haburger-menu span:nth-child(1) {
+  top: 0px;
+}
+
+header .haburger-menu span:nth-child(2) {
+  top: 18px;
+}
+
+header .haburger-menu span:nth-child(3) {
+  top: 36px;
+}
+
+header .haburger-menu.open span:nth-child(1) {
+  top: 18px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+header .haburger-menu.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+header .haburger-menu.open span:nth-child(3) {
+  top: 18px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
 header nav {
   padding-right: 50px;
 }
@@ -155,8 +225,135 @@ header .discount span:last-child {
   line-height: 25px;
   font-size: 40px;
   letter-spacing: 5px;
+  display: block;
 }
 
+/* Responsive Header */
+
+@media screen and (max-width: 1140px) {
+  header .wrapper {
+    padding: 15px;
+  }
+
+  header .caption p:first-child {
+    font-size: calc(24px / 1.4);
+  }
+  header .caption p:last-child span {
+    font-size: calc(110px / 1.4);
+  }
+
+  header .hero .imgs .drink {
+    width: calc(350px / 1.2);
+  }
+  header .hero .imgs .potato {
+    width: calc(300px / 1.2);
+  }
+  header .hero .imgs .burger {
+    width: calc(480px / 1.2);
+  }
+  header .discount {
+    width: calc(150px / 1.2);
+    height: calc(150px / 1.2);
+    font-size: calc(60px / 1.2);
+  }
+}
+
+@media screen and (max-width: 770px) {
+  header .contact {
+    display: none;
+  }
+  header .haburger-menu {
+    display: block;
+  }
+  header nav {
+    padding-right: 0;
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+    background: #42200b;
+    padding: 20px 0;
+  }
+  header nav ul li {
+    margin: 5px;
+  }
+  header nav ul li a {
+    color: white;
+  }
+  header .hero {
+    flex-direction: column-reverse;
+  }
+  header .hero .imgs {
+    width: 520px;
+    height: 361px;
+  }
+  header .discount {
+    right: 370px;
+  }
+}
+@media screen and (max-width: 600px) {
+  header .hero .imgs {
+    width: 420px;
+    height: 290px;
+  }
+  header .hero .imgs .drink {
+    width: calc(350px / 1.5);
+  }
+  header .hero .imgs .potato {
+    width: calc(300px / 1.5);
+  }
+  header .hero .imgs .burger {
+    width: calc(480px / 1.5);
+  }
+  header .discount {
+    width: calc(150px / 1.5);
+    height: calc(150px / 1.5);
+    font-size: calc(60px / 1.5);
+  }
+  header .hero .imgs .potato {
+    right: 200px;
+    bottom: 70px;
+  }
+  header .discount {
+    right: 286px;
+    font-size: calc(50px / 1.5);
+  }
+  header .discount span:last-child {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  header .hero .imgs {
+    width: 350px;
+    height: 260px;
+  }
+  header .hero .imgs .drink {
+    width: calc(350px / 1.8);
+  }
+  header .hero .imgs .potato {
+    width: calc(300px / 1.8);
+  }
+  header .hero .imgs .burger {
+    width: calc(480px / 1.8);
+  }
+  header .discount {
+    width: calc(150px / 1.8);
+    height: calc(150px / 1.8);
+    font-size: calc(60px / 1.8);
+  }
+  header .discount {
+    right: 286px;
+    font-size: calc(50px / 1.8);
+  }
+  header .discount span:last-child {
+    font-size: 20px;
+  }
+}
 /*⛔⛔ End Header ⛔⛔*/
 
 /* 
