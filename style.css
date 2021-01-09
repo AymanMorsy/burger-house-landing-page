@@ -327,6 +327,8 @@ header .discount span:last-child {
   }
 }
 
+/* Responsive Header */
+
 @media screen and (max-width: 520px) {
   header .hero .imgs {
     width: 350px;
@@ -399,6 +401,7 @@ header .discount span:last-child {
 }
 
 /* Responsive Try Today */
+
 @media screen and (max-width: 900px) {
   .try-today {
     flex-direction: column;
@@ -487,6 +490,8 @@ header .discount span:last-child {
   width: 200px;
   padding: 15px;
 }
+
+/* Responsive Menu section */
 
 @media screen and (max-width: 700px) {
   .menu .wrapper h2 {
@@ -580,10 +585,67 @@ header .discount span:last-child {
   width: 17px;
   height: 17px;
 }
+
+/* Responsive Slider */
+
+@media screen and (max-width: 1180px) {
+  .swiper-container-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    left: -390px;
+  }
+
+  .slider .caption p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .slider .caption h2 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 970px) {
+  .swiper-container-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    left: auto;
+  }
+}
+@media screen and (max-width: 700px) {
+  section.slider {
+    margin-bottom: 250px;
+  }
+  .swiper-container.swiper-container-initialized.swiper-container-horizontal {
+    height: auto;
+  }
+  .swiper-container-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    left: auto;
+  }
+  .slider .swiper-slide {
+    height: auto;
+    padding-bottom: 50px;
+  }
+  .slider .content {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  .slider .content .caption {
+    width: 100%;
+  }
+  .slider .caption h2 {
+    font-size: 30px;
+  }
+
+  .slider .content .img {
+    width: 100%;
+  }
+}
 /*⛔⛔ End Slider ⛔⛔*/
 
 /* 
-🌳🌳 Start Slider  🌳🌳 
+🌳🌳 Start Booking  🌳🌳 
 */
 .booking {
   margin-bottom: 135px;
