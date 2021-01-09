@@ -817,5 +817,32 @@ footer .bottom-footer img {
   height: 29px;
   display: inline-block;
 }
+/* Responsive Footer */
+@media screen and (max-width: 870px) {
+  footer .wrapper {
+    position: relative;
+    width: 100%;
+  }
+  footer .sub-wrapper {
+  }
+  footer .bottom-footer {
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    bottom: 0px;
+  }
+  @media screen and (max-width: 600px) {
+    footer .sub-wrapper {
+      flex-direction: column;
+      margin-bottom: 0;
+    }
+    footer .sub-wrapper > p {
+      margin-bottom: 22px;
+    }
+    footer .bottom-footer {
+      flex-direction: column-reverse;
+    }
+  }
+}
 
 /*⛔⛔ End Footer ⛔⛔*/
