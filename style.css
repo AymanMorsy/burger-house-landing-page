@@ -718,6 +718,36 @@ form::after {
   top: 0;
 }
 
+/* Responsive Booking */
+
+@media screen and (max-width: 768px) {
+  .booking form {
+    width: 100%;
+  }
+  .booking form button,
+  .booking form input {
+    width: calc(90% / 2);
+  }
+  .booking h2 {
+    font-size: 30px;
+  }
+  .booking h2::before {
+    top: 50px;
+  }
+  .booking form button {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .booking form {
+    justify-content: center;
+  }
+  .booking form button,
+  .booking form input {
+    width: 90%;
+  }
+}
+
 /*⛔⛔ End Booking ⛔⛔*/
 
 /* 
