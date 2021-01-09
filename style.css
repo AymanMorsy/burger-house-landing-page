@@ -190,16 +190,37 @@ header .hero .imgs img {
 }
 header .hero .imgs .burger {
   width: 480px;
+  bottom: 1000px; /*animated*/
+  animation: animateBurger 1s 1s forwards;
+}
+@keyframes animateBurger {
+  to {
+    bottom: 0px;
+  }
 }
 header .hero .imgs .drink {
   width: 350px;
   right: -80px;
   bottom: 5px;
+  right: -500px; /*animated*/
+  animation: animateDrink 0.5s 1.8s forwards;
+}
+@keyframes animateDrink {
+  to {
+    right: -80px;
+  }
 }
 header .hero .imgs .potato {
   width: 300px;
   right: 255px;
   bottom: 120px;
+  opacity: 0;
+  animation: animatePotato 0.5s 2.5s forwards;
+}
+@keyframes animatePotato {
+  to {
+    opacity: 1;
+  }
 }
 
 header .discount {
@@ -215,6 +236,13 @@ header .discount {
   box-shadow: 0px 0px 0px 10px #df1b1c;
   font-size: 60px;
   font-family: "Bebas Neue", cursive;
+  opacity: 0;
+  animation: animateDiscount 0.5s 2.8s forwards;
+}
+@keyframes animateDiscount {
+  to {
+    opacity: 1;
+  }
 }
 header .discount span {
   font-size: 30px;
