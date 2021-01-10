@@ -743,6 +743,7 @@ header .discount span:last-child {
 */
 .booking {
   margin-bottom: 135px;
+  position: relative;
 }
 .booking p,
 .booking h2 {
@@ -769,7 +770,6 @@ header .discount span:last-child {
   justify-content: space-between;
   width: 750px;
   margin: 0 auto;
-  position: relative;
 }
 .booking form input {
   width: 350px;
@@ -791,29 +791,41 @@ header .discount span:last-child {
   color: white;
   border: none;
 }
-
-form::before {
+.booking .wrapper {
+  position: relative;
+}
+.booking .wrapper::before {
   content: url(./assets/images/form/Burger.png);
   position: absolute;
-  left: -360px;
-  top: -270px;
+  left: -92px;
+  top: -137px;
 }
-form::after {
+.booking .wrapper::after {
   content: url(./assets/images/form/Image.png);
   position: absolute;
   transform: scale(0.9);
-  right: -337px;
-  top: -71px;
+  right: 0;
+  top: 239px;
+  z-index: -1;
 }
-.booking h2::before {
+.booking::before {
   content: url(./assets/images/form/Bottle.png);
   position: absolute;
-  left: 100px;
-  top: 0;
+  left: 70px;
+  top: 130px;
 }
 
 /* Responsive Booking */
 
+@media screen and (max-width: 980px) {
+  .booking .wrapper::after {
+    top: 230px;
+  }
+  .booking .wrapper::before {
+    top: -70px;
+    transform: scale(0.8);
+  }
+}
 @media screen and (max-width: 768px) {
   .booking form {
     width: 100%;
@@ -825,14 +837,22 @@ form::after {
   .booking h2 {
     font-size: 30px;
   }
-  .booking h2::before {
-    top: 50px;
-  }
   .booking form button {
     font-size: 15px;
   }
 }
 @media screen and (max-width: 500px) {
+  .booking::before {
+    top: 95px;
+  }
+  .booking .wrapper::before {
+    top: -125px;
+    left: -115px;
+  }
+  .booking .wrapper::after {
+    top: 347px;
+  }
+
   .booking form {
     justify-content: center;
   }
