@@ -445,8 +445,11 @@ header .discount span:last-child {
   header .discount span:last-child {
     font-size: 20px;
   }
+  header .caption p:last-child {
+    font-size: 30px;
+  }
   header .caption p:last-child span {
-    font-size: 50px;
+    font-size: 40px;
   }
 }
 
